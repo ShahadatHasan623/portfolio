@@ -1,4 +1,5 @@
 import React from "react";
+import navbarLogo from "../assets/logo.png"
 const Navbar = () => {
   const links = (
     <>
@@ -18,7 +19,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar max-w-7xl mx-auto mt-5 px-8 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2  text-white">
+    <div className="navbar sticky top-0 z-50 max-w-7xl mx-auto mt-5 px-8 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2  text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +45,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        
+        <img className="h-16 w-45" src={navbarLogo} alt="" />
       </div>
       <div className="navbar-center items-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
