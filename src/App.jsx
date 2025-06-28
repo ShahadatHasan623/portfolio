@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import "./App.css";
 import HeroSection from "./pages/Hero/HeroSection";
 import Navbar from "./sheard/Navbar";
@@ -9,10 +9,10 @@ function App() {
  
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar>
       <HeroSection></HeroSection>
       <TotalCount></TotalCount>
-      <Skills id="skill"></Skills>
+      <Skills id="skill"></Skills> */}
     </>
   );
 }

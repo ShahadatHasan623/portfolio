@@ -5,6 +5,7 @@ import Skills from '../Skills/Skills';
 import Education from '../Education/Education';
 import Project from '../Project/Project';
 import Contact from '../Contact/Contact';
+import About from '../About/About';
 
 const Root = () => {
     return (
@@ -12,6 +13,7 @@ const Root = () => {
             <Navbar></Navbar>
             <HeroSection></HeroSection>
             <Skills></Skills>
+            <About></About>
             <Education></Education>
             <Project></Project>
             <Contact></Contact>
