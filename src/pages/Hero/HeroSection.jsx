@@ -4,9 +4,9 @@ import portfolioPhoto from "../../assets/Portfolio.png";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 gap-10 my-16">
+    <div className="max-w-7xl mx-auto min-h-[calc(100vh-80px)] flex flex-col-reverse md:flex-row items-center justify-between gap-6 lg:px-0 px-4 py-12">
       {/* Text Section */}
-      <div className="space-y-5 text-center md:text-left">
+      <div className="space-y-5 text-center md:text-left w-full md:w-1/2">
         <p className="text-lg font-light text-white">Hello, I'm</p>
         <h1 className="text-3xl md:text-5xl font-semibold text-white">
           Md. Shahadat Hossain
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </span>
         </h2>
 
-        <p className="text-white max-w-xl">
+        <p className="text-white max-w-xl mx-auto md:mx-0" data-aos="fade-right">
           I craft responsive and interactive websites using modern technologies
           like React, Tailwind CSS, and JavaScript. My passion is turning ideas
           into user-friendly digital experiences. Let’s build something amazing
@@ -51,9 +51,9 @@ const HeroSection = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-full md:w-[50%] flex justify-center">
+      <div className="flex justify-center w-full md:w-1/2" data-aos="fade-left">
         <img
-          className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-2xl border-4 border-primary"
+          className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-primary"
           src={portfolioPhoto}
           alt="Shahadat Portfolio"
         />
