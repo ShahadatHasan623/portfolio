@@ -7,7 +7,7 @@ import portfolio from "../../assets/Portfolio.png";
 
 const About = () => {
   return (
-    <div className="my-12   max-w-7xl mx-auto" id="about">
+    <div className="py-16   max-w-7xl mx-auto" id="about">
       <h1 className="text-primary text-center custome-font text-3xl uppercase font-extrabold mb-8">
         About Me
       </h1>
