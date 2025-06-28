@@ -1,20 +1,23 @@
 import React from "react";
-import navbarLogo from "../assets/logo.png"
+import navbarLogo from "../assets/logo.png";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <a>About Me</a>
-      </li>
-      <li><a href="">Skills</a></li>
-      <li>
-        <a>Education</a>
+        <a href="#about">About Me</a>
       </li>
       <li>
-        <a>Projects Section</a>
+        <a href="#skills">Skills</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#project">Project</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
       </li>
     </>
   );

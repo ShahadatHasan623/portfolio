@@ -6,7 +6,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 const TotalCount = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mx-auto max-w-7xl gap-5 my-16 justify-center items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mx-auto max-w-7xl gap-5 my-12 justify-center items-center">
       <div data-aos="zoom-in-right" className="backdrop-blur-xl bg-[#1a263880] rounded-2xl px-5 py-5">
         <div className="flex text-white items-center gap-6 ">
           <div className="bg-secondary rounded-2xl flex items-center justify-center p-4">
