@@ -4,7 +4,7 @@ import { FaEnvelope, FaWhatsapp, FaPhone } from "react-icons/fa";
 const Contact = () => {
   return (
     <div id="contact" className="max-w-7xl mx-auto my-16 px-4">
-      <h1 className="text-primary text-4xl custome-font uppercase font-bold text-center mb-10">
+      <h1 data-aos="zoom-in-left" className="text-primary text-4xl custome-font uppercase font-bold text-center mb-10">
         Contact
       </h1>
 
