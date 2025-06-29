@@ -1,12 +1,13 @@
-import { StrictMode } from "react";
+import { Component, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Root from "./pages/layouts/Root.jsx";
-import ScrollPage from "./scrollpage/ScrollPage.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Details from "./pages/Project/Details.jsx";
+import Home from "./pages/Home/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <ScrollPage></ScrollPage>,
+        element: <Home></Home>,
       },
+      {
+        path:'/details',
+        Component:Details
+      }
     ],
   },
 ]);
