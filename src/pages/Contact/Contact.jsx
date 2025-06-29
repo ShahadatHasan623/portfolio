@@ -8,8 +8,7 @@ const Contact = () => {
         Contact
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#1a263880] p-8 rounded-xl shadow-xl text-white">
-        {/* Left Side - Contact Info */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10  p-8 rounded-xl shadow-xl text-white">
         {/* Left Side - Contact Info */}
         <div data-aos="zoom-in-right" className="flex flex-col justify-center space-y-6">
           <div className="flex items-center gap-4">
