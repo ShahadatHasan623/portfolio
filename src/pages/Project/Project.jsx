@@ -1,13 +1,13 @@
 import React, { use } from "react";
 import MyProject from "./MyProject";
 
-const project = fetch("http://localhost:3000/project").then((res) =>
+const project = fetch("https://portfolio-server-side-beta.vercel.app/project").then((res) =>
   res.json()
 );
 const Project = () => {
   const projectData = use(project);
   return (
-    <div>
+    <div id="project">
       <h1 data-aos="zoom-in-right" className="text-primary uppercase text-4xl text-center custome-font font-bold mb-5">
         Project
       </h1>

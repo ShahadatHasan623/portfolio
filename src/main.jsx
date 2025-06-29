@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Details from "./pages/Project/Details.jsx";
 import Home from "./pages/Home/Home.jsx";
+import ProjectDetails from "./pages/Project/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,20 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      {
-        path:'/details',
-        Component:Details
-      }
     ],
   },
+  {
+    path:'/',
+    Component:Details,
+    children:[
+      {
+        path:'/project-details/:id',
+        loader:({params})=>fetch(`https://portfolio-server-side-beta.vercel.app/project/${params.id}`),
+        Component:ProjectDetails
+      }
+    ]
+
+  }
 ]);
 
 AOS.init({

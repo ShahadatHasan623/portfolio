@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const MyProject = ({ project }) => {
   const { name, image, _id, description } = project;
@@ -17,18 +18,12 @@ const MyProject = ({ project }) => {
 
         {/* 🔧 Updated Button Section */}
         <div data-aos="fade-right" className="flex justify-between items-center px-6 py-4">
-          <button
-            type="button"
-            className="px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700 transition"
-          >
-            Link
-          </button>
-          <button
+          <Link to={`/project-details/${_id}`}
             type="button"
             className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 transition"
           >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
