@@ -8,7 +8,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 const Skills = () => {
   return (
-    <div className="my-12" id="skills" >
+    <div className="my-12" id="skills">
       <div>
         <h1
           data-aos="zoom-in-right"
@@ -24,12 +24,12 @@ const Skills = () => {
           task.
         </h1>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-2xl mx-auto mt-12 px-4">
+      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-2xl mx-auto mt-12 justify-center items-center px-5">
         <div
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -46,7 +46,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -63,7 +63,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -82,7 +82,7 @@ const Skills = () => {
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="500"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -100,7 +100,7 @@ const Skills = () => {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -117,7 +117,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -134,7 +134,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -152,7 +152,7 @@ const Skills = () => {
           data-aos="fade-left"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -169,7 +169,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
@@ -186,7 +186,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          className="w-32 h-32 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
+          className="p-14 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
                 transition-transform duration-500 relative overflow-hidden group cursor-pointer 
                 shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
         >
