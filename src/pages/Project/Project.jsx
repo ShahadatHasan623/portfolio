@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import MyProject from "./MyProject";
 
-const project = fetch("https://portfolio-server-side-beta.vercel.app/project").then((res) =>
+const project = fetch("https://portfolio-server-brown-nu.vercel.app/project").then((res) =>
   res.json()
 );
 const Project = () => {

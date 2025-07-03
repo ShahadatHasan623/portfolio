@@ -17,7 +17,7 @@ const ProjectDetails = () => {
   } = data;
 
   return (
-    <div className="my-16 max-w-7xl mx-auto px-4">
+    <div className="my-16 max-w-7xl mx-auto px-4 py-6">
       {/* Project Title */}
       <h1 className="text-4xl font-bold text-primary text-center mb-10">
         {name}

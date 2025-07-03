@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/project-details/:id',
-        loader:({params})=>fetch(`https://portfolio-server-side-beta.vercel.app/project/${params.id}`),
+        loader:({params})=>fetch(`https://portfolio-server-brown-nu.vercel.app/project/${params.id}`),
         Component:ProjectDetails
       }
     ]

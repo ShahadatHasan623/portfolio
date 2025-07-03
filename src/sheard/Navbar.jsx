@@ -5,19 +5,19 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a href="#about">About Me</a>
+        <a className="hover:border-b-2" href="#about">About Me</a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a className="hover:border-b-2" href="#skills">Skills</a>
       </li>
       <li>
-        <a href="#education">Education</a>
+        <a className="hover:border-b-2" href="#education">Education</a>
       </li>
       <li>
-        <a href="#project">Project</a>
+        <a className="hover:border-b-2" href="#project">Project</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a className="hover:border-b-2" href="#contact">Contact</a>
       </li>
     </>
   );
