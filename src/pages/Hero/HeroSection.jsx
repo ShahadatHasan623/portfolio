@@ -19,6 +19,7 @@ const HeroSection = () => {
             <Typewriter
               words={[
                 "Frontend Web Developer",
+                "MERN Stack Web Developer",
                 "React Web Developer",
                 "Web Developer",
               ]}

@@ -1,6 +1,6 @@
 import React from "react";
 import navbarLogo from "../assets/logo.png";
-import resume from '../../public/resume.pdf'
+import resume from '../../public/MERN STACK WEB DEVELOPER.pdf'
 const Navbar = () => {
   const links = (
     <>
@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="navbar sticky top-0 z-50 max-w-7xl mx-auto mt-5 px-8 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2  text-white">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} className="lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-10 mt-3 w-52 p-2 shadow"
+            className="flex flex-col gap-2  dropdown-content bg-base-100 text-black  z-10 mt-3 w-52 p-2 "
           >
             {links}
           </ul>
@@ -51,7 +51,7 @@ const Navbar = () => {
         <img className="h-16 w-45" src={navbarLogo} alt="" />
       </div>
       <div className="navbar-center items-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className=" flex items-center gap-3 menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <a
