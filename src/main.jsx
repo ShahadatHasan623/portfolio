@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Details from "./pages/Project/Details.jsx";
 import Home from "./pages/Home/Home.jsx";
 import ProjectDetails from "./pages/Project/ProjectDetails.jsx";
+import CustomCursor from "./components/CustomCursor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,5 +44,6 @@ AOS.init({
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
+    <CustomCursor />
   </StrictMode>
 );

@@ -8,16 +8,16 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 
 const skills = [
-  { icon: <FaHtml5 />, name: "HTML5" },
-  { icon: <FaCss3Alt />, name: "CSS3" },
-  { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-  { icon: <IoLogoJavascript />, name: "JavaScript" },
-  { icon: <FaReact />, name: "React JS" },
-  { icon: <SiExpress />, name: "Express JS" },
-  { icon: <FaNodeJs />, name: "Node JS" },
-  { icon: <BiLogoMongodb />, name: "MongoDB" },
-  { icon: <SiVercel />, name: "Vercel" },
-  { icon: <IoLogoFirebase />, name: "Firebase" },
+  { icon: <FaHtml5 />, name: "HTML5", color: "#e44d26" },
+  { icon: <FaCss3Alt />, name: "CSS3", color: "#264de4" },
+  { icon: <RiTailwindCssFill />, name: "Tailwind CSS", color: "#38bdf8" },
+  { icon: <IoLogoJavascript />, name: "JavaScript", color: "#f0db4f" },
+  { icon: <FaReact />, name: "React JS", color: "#61dbfb" },
+  { icon: <SiExpress />, name: "Express JS", color: "#ffffff" },
+  { icon: <FaNodeJs />, name: "Node JS", color: "#3c873a" },
+  { icon: <BiLogoMongodb />, name: "MongoDB", color: "#47A248" },
+  { icon: <SiVercel />, name: "Vercel", color: "#ffffff" },
+  { icon: <IoLogoFirebase />, name: "Firebase", color: "#FFA611" },
 ];
 
 const Skills = () => {
@@ -32,7 +32,7 @@ const Skills = () => {
         </h1>
         <p
           data-aos="zoom-in-left"
-          className="text-white mt-2 font-medium"
+          className="text-white mt-2 font-medium max-w-xl mx-auto"
         >
           Skills are the expertise or talent needed in order to do a job or task.
         </p>
@@ -44,18 +44,25 @@ const Skills = () => {
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            className="w-full h-28 bg-[#071529] text-accent rounded-xl flex items-center justify-center 
-              transition-transform duration-500 relative overflow-hidden group cursor-pointer 
-              shadow-[0px_10px_25px_rgba(0,0,0,0.6)]"
+            className="relative bg-[#0f1a2b] rounded-xl h-28 flex items-center justify-center shadow-lg overflow-hidden group transition duration-500 cursor-pointer hover:scale-105 hover:shadow-2xl"
           >
+            {/* Halo Glow Background */}
+            <div
+              className="absolute w-28 h-28 rounded-full bg-opacity-30 blur-xl opacity-0 group-hover:opacity-60 transition duration-500"
+              style={{ backgroundColor: skill.color }}
+            ></div>
+
             {/* Icon */}
-            <div className="text-4xl absolute z-10 group-hover:-translate-y-14 transition-transform duration-500">
+            <div
+              className="text-4xl z-10 transition-transform duration-500 group-hover:scale-125"
+              style={{ color: skill.color }}
+            >
               {skill.icon}
             </div>
 
             {/* Name */}
-            <div className="absolute text-center opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-10 transition-all duration-500 z-20">
-              <p className="text-base font-semibold">{skill.name}</p>
+            <div className="absolute bottom-2 text-xs font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-500">
+              {skill.name}
             </div>
           </div>
         ))}

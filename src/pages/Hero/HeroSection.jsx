@@ -5,17 +5,19 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-7xl mx-auto min-h-[calc(100vh-80px)] flex flex-col-reverse md:flex-row items-center justify-between gap-6 lg:px-0 px-4 py-12">
+    <section className="max-w-7xl mx-auto min-h-[calc(100vh-80px)] flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-6 py-16">
+      
       {/* Text Section */}
-      <div className="space-y-5 text-center md:text-left w-full md:w-1/2">
-        <p className="text-lg font-light text-white">Hello, I'm</p>
-        <h1 className="text-3xl md:text-5xl font-semibold text-white">
+      <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+        <p className="text-lg font-light text-gray-300">Hello, I'm</p>
+        
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
           Md. Shahadat Hossain
         </h1>
 
-        <h2 className="font-normal text-white">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-200">
           And I'm a{" "}
-          <span className="text-primary text-2xl font-bold">
+          <span className="text-primary font-bold">
             <Typewriter
               words={[
                 "Frontend Web Developer",
@@ -33,64 +35,65 @@ const HeroSection = () => {
           </span>
         </h2>
 
-        <p
-          className="text-white max-w-xl mx-auto md:mx-0"
-          data-aos="fade-right"
-        >
+        <p className="text-gray-400 max-w-xl mx-auto md:mx-0 leading-relaxed px-2 sm:px-0">
           I craft responsive and interactive websites using modern technologies
           like React, Tailwind CSS, and JavaScript. My passion is turning ideas
           into user-friendly digital experiences. Let’s build something amazing
           together!
         </p>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-5 mt-6 px-2 sm:px-0">
           <a
-            data-aos="flip-up"
             href="#about"
-            className="relative px-5 py-2 mt-2 font-medium text-white group inline-block"
+            className="relative inline-block px-8 py-3 font-semibold text-white overflow-hidden rounded-lg group bg-gradient-to-r from-red-500 to-pink-600 hover:from-pink-600 hover:to-red-500 transition duration-300"
           >
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-red-500 group-hover:bg-red-700 group-hover:skew-x-12"></span>
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-red-700 group-hover:bg-red-500 group-hover:-skew-x-12"></span>
-            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-red-600 -rotate-12"></span>
-            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-red-400 -rotate-12"></span>
-            <span className="relative">About Me</span>
+            <span className="relative z-10">About Me</span>
+            <span className="absolute inset-0 bg-white opacity-10 rounded-lg blur-md group-hover:opacity-20 transition duration-300"></span>
           </a>
+
+          {/* Social Icons */}
           <a
-            data-aos="zoom-in-right"
-            target="_blank"
             href="https://www.facebook.com/shahadat.shariar.2024"
-            className="text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="text-gray-400 hover:text-blue-600 transition duration-300"
           >
-            <FaFacebook size={35} />
+            <FaFacebook size={28} />
           </a>
           <a
-            data-aos="zoom-in"
-            target="_blank"
             href="https://www.linkedin.com/in/shahadat-hasan-988b7b372/"
-            className="text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-gray-400 hover:text-blue-500 transition duration-300"
           >
-            <FaLinkedin size={35} />
+            <FaLinkedin size={28} />
           </a>
           <a
-            data-aos="zoom-in-left"
-            target="_blank"
             href="https://github.com/ShahadatHasan623"
-            className="text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="text-gray-400 hover:text-gray-100 transition duration-300"
           >
-            <FaGithub size={35} />
+            <FaGithub size={28} />
           </a>
         </div>
       </div>
 
       {/* Image Section */}
-      <div className="flex justify-center w-full md:w-1/2" data-aos="fade-left">
-        <img
-          className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-primary"
-          src={portfolioPhoto}
-          alt="Shahadat Portfolio"
-        />
+      <div className="w-full md:w-1/2 flex justify-center mb-12 md:mb-0" data-aos="fade-left">
+        <div className="relative rounded-full p-1 bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:scale-105 transition-transform duration-500 shadow-xl">
+          <img
+            src={portfolioPhoto}
+            alt="Shahadat Portfolio"
+            className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-gray-900"
+          />
+          <div className="absolute inset-0 rounded-full ring-2 ring-pink-400 opacity-50 animate-pulse"></div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

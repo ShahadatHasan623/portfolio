@@ -4,85 +4,67 @@ import { FaBlog, FaHandPointer } from "react-icons/fa";
 import { GoProject } from "react-icons/go";
 import { MdOutlineFileDownload } from "react-icons/md";
 
+const stats = [
+  {
+    id: 1,
+    icon: <FaHandPointer size={36} />,
+    end: 130,
+    label: "Total Visited",
+    delay: "zoom-in-right",
+  },
+  {
+    id: 2,
+    icon: <MdOutlineFileDownload size={36} />,
+    end: 20,
+    label: "Resume Downloads",
+    delay: "zoom-in",
+  },
+  {
+    id: 3,
+    icon: <GoProject size={36} />,
+    end: 5,
+    label: "Total Projects",
+    delay: "zoom-in",
+  },
+  {
+    id: 4,
+    icon: <FaBlog size={36} />,
+    end: 6,
+    label: "Total Blogs",
+    delay: "zoom-in-left",
+  },
+];
+
 const TotalCount = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mx-auto max-w-7xl gap-5 my-12 justify-center items-center">
-      <div data-aos="zoom-in-right" className="backdrop-blur-xl bg-[#1a263880] rounded-2xl px-5 py-5">
-        <div className="flex text-white items-center gap-6 ">
-          <div className="bg-secondary rounded-2xl flex items-center justify-center p-4">
-            <FaHandPointer size={50} />
-          </div>
-          <div>
-            <CountUp
-              start={0}
-              end={1330}
-              delay={1}
-              duration={3}
-              separator=","
-              suffix="+"
-              className="text-5xl"
-            />
-            <h1 className="mt-2">Total Visited</h1>
-          </div>
-        </div>
-      </div>
-      <div data-aos="zoom-in" className="backdrop-blur-xl bg-[#1a263880] rounded-2xl px-5 py-5">
-        <div className="flex text-white items-center gap-6 ">
-          <div className="bg-secondary rounded-2xl flex items-center justify-center p-4">
-            <MdOutlineFileDownload size={50} />
-          </div>
-          <div className="">
-            <CountUp
-              start={0}
-              end={280}
-              delay={1}
-              duration={3}
-              separator=","
-              suffix="+"
-              className="text-5xl"
-            />
-            <h1 className="mt-2">Resume download</h1>
+    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-16 px-4">
+      {stats.map((stat) => (
+        <div
+          key={stat.id}
+          data-aos={stat.delay}
+          className="bg-gradient-to-br from-[#1a2638cc] to-[#1a2638dd] backdrop-blur-xl text-white rounded-2xl p-6 shadow-lg border border-white/10 hover:scale-105 transition-transform duration-300 group cursor-pointer"
+        >
+          <div className="flex items-center gap-5">
+            <div className="bg-secondary text-black rounded-full p-4 shadow-inner group-hover:rotate-12 transition-all duration-300">
+              {stat.icon}
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold">
+                <CountUp
+                  start={0}
+                  end={stat.end}
+                  duration={2.5}
+                  separator=","
+                  suffix="+"
+                />
+              </h2>
+              <p className="mt-1 text-sm font-medium tracking-wide text-white/80">
+                {stat.label}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div data-aos="zoom-in" className="backdrop-blur-xl bg-[#1a263880] rounded-2xl px-5 py-5">
-        <div className="flex text-white items-center gap-6 ">
-          <div className="bg-secondary rounded-2xl flex items-center justify-center p-4">
-            <GoProject size={50} />
-          </div>
-          <div className="">
-            <CountUp
-              start={0}
-              end={5}
-              delay={1}
-              duration={3}
-              separator=","
-              suffix="+"
-              className="text-5xl"
-            />
-            <h1 className="mt-2">Total Project</h1>
-          </div>
-        </div>
-      </div>
-      <div data-aos="zoom-in-left" className="backdrop-blur-xl bg-[#1a263880] rounded-2xl px-5 py-5">
-        <div className="flex text-white items-center gap-6 ">
-          <div className="bg-secondary rounded-2xl flex items-center justify-center p-4">
-            <FaBlog size={50} />
-          </div>
-          <div className="">
-            <CountUp
-              start={0}
-              end={6}
-              delay={1}
-              duration={3}
-              separator=","
-              suffix="+"
-              className="text-5xl"
-            />
-            <h1 className="mt-2">Total Blogs</h1>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

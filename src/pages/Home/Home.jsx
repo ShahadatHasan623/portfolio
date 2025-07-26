@@ -7,6 +7,7 @@ import Education from '../Education/Education';
 import Project from '../Project/Project';
 import Contact from '../Contact/Contact';
 
+
 const Home = () => {
     return (
         <div>
