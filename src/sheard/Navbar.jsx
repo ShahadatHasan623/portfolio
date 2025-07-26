@@ -4,53 +4,28 @@ import resume from "../../public/MERN STACK WEB DEVELOPER.pdf";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navItems = [
+    { name: "About Me", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Education", href: "#education" },
+    { name: "Project", href: "#project" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   const links = (
     <>
-      <li>
-        <a
-          className="hover:border-b-2 hover:border-red-500 transition-all"
-          href="#about"
-          onClick={() => setIsOpen(false)}
-        >
-          About Me
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:border-b-2 hover:border-red-500 transition-all"
-          href="#skills"
-          onClick={() => setIsOpen(false)}
-        >
-          Skills
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:border-b-2 hover:border-red-500 transition-all"
-          href="#education"
-          onClick={() => setIsOpen(false)}
-        >
-          Education
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:border-b-2 hover:border-red-500 transition-all"
-          href="#project"
-          onClick={() => setIsOpen(false)}
-        >
-          Project
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:border-b-2 hover:border-red-500 transition-all"
-          href="#contact"
-          onClick={() => setIsOpen(false)}
-        >
-          Contact
-        </a>
-      </li>
+      {navItems.map((link) => (
+        <li key={link.name}>
+          <a
+            href={link.href}
+            onClick={() => setIsOpen(false)}
+            className="relative group px-1 transition duration-300 text-white hover:text-red-400"
+          >
+            {link.name}
+            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+      ))}
     </>
   );
 
@@ -58,7 +33,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 max-w-7xl mx-auto mt-5 px-6 py-3 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2 text-white flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center gap-3">
-        <h1 className="great-vibes-regular  text-5xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent select-none cursor-pointer">
+        <h1 className="great-vibes-regular text-5xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent select-none cursor-pointer">
           Shahadat
         </h1>
       </div>
