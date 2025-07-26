@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import navbarLogo from "../assets/logo.png";
-import resume from '../../public/MERN STACK WEB DEVELOPER.pdf';
+import resume from "../../public/MERN STACK WEB DEVELOPER.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,29 +7,60 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a className="hover:border-b-2 hover:border-red-500 transition-all" href="#about" onClick={() => setIsOpen(false)}>About Me</a>
+        <a
+          className="hover:border-b-2 hover:border-red-500 transition-all"
+          href="#about"
+          onClick={() => setIsOpen(false)}
+        >
+          About Me
+        </a>
       </li>
       <li>
-        <a className="hover:border-b-2 hover:border-red-500 transition-all" href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
+        <a
+          className="hover:border-b-2 hover:border-red-500 transition-all"
+          href="#skills"
+          onClick={() => setIsOpen(false)}
+        >
+          Skills
+        </a>
       </li>
       <li>
-        <a className="hover:border-b-2 hover:border-red-500 transition-all" href="#education" onClick={() => setIsOpen(false)}>Education</a>
+        <a
+          className="hover:border-b-2 hover:border-red-500 transition-all"
+          href="#education"
+          onClick={() => setIsOpen(false)}
+        >
+          Education
+        </a>
       </li>
       <li>
-        <a className="hover:border-b-2 hover:border-red-500 transition-all" href="#project" onClick={() => setIsOpen(false)}>Project</a>
+        <a
+          className="hover:border-b-2 hover:border-red-500 transition-all"
+          href="#project"
+          onClick={() => setIsOpen(false)}
+        >
+          Project
+        </a>
       </li>
       <li>
-        <a className="hover:border-b-2 hover:border-red-500 transition-all" href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+        <a
+          className="hover:border-b-2 hover:border-red-500 transition-all"
+          href="#contact"
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+        </a>
       </li>
     </>
   );
 
   return (
     <nav className="sticky top-0 z-50 max-w-7xl mx-auto mt-5 px-6 py-3 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2 text-white flex items-center justify-between">
-
       {/* Logo */}
       <div className="flex items-center gap-3">
-        <img className="h-14 w-auto" src={navbarLogo} alt="Logo" />
+        <h1 className="great-vibes-regular  text-5xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent select-none cursor-pointer">
+          Shahadat
+        </h1>
       </div>
 
       {/* Desktop Menu */}
@@ -65,7 +95,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           ) : (
             <svg
@@ -75,7 +110,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           )}
         </button>
