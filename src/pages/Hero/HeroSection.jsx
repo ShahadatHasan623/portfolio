@@ -63,7 +63,7 @@ const HeroSection = () => {
               <FaFacebook size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/shahadat-hasan-988b7b372/"
+              href="https://www.linkedin.com/in/md-shahadat-942577305/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

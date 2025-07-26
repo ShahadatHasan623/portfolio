@@ -24,7 +24,7 @@ const Footer = () => {
           <a
             data-aos="zoom-in"
             target="_blank"
-            href="https://www.linkedin.com/in/shahadat-hasan-988b7b372/"
+            href="https://www.linkedin.com/in/md-shahadat-942577305/"
             className="text-white"
           >
             <FaLinkedin size={35} />
