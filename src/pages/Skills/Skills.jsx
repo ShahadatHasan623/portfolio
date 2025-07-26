@@ -22,8 +22,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="my-16 px-4" id="skills">
-      <div className="text-center">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0d1525]" id="skills">
+      <div className="text-center mb-12">
         <h1
           data-aos="zoom-in-right"
           className="text-primary custome-font text-4xl font-extrabold uppercase"
@@ -32,42 +32,42 @@ const Skills = () => {
         </h1>
         <p
           data-aos="zoom-in-left"
-          className="text-white mt-2 font-medium max-w-xl mx-auto"
+          className="text-gray-300 mt-3 font-medium max-w-2xl mx-auto text-sm sm:text-base"
         >
           Skills are the expertise or talent needed in order to do a job or task.
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mt-12 ">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
         {skills.map((skill, index) => (
           <div
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            className="relative bg-[#0f1a2b] rounded-xl h-28 flex items-center justify-center shadow-lg overflow-hidden group transition duration-500 cursor-pointer hover:scale-105 hover:shadow-2xl"
+            className="relative bg-[#101b2e] rounded-xl h-28 flex items-center justify-center shadow-md overflow-hidden group transition duration-500 cursor-pointer hover:scale-105 hover:shadow-xl"
           >
-            {/* Halo Glow Background */}
+            {/* Halo Glow */}
             <div
-              className="absolute w-28 h-28 rounded-full bg-opacity-30 blur-xl opacity-0 group-hover:opacity-60 transition duration-500"
+              className="absolute w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-opacity-30 blur-xl opacity-0 group-hover:opacity-60 transition duration-500"
               style={{ backgroundColor: skill.color }}
             ></div>
 
             {/* Icon */}
             <div
-              className="text-4xl z-10 transition-transform duration-500 group-hover:scale-125"
+              className="text-3xl sm:text-4xl z-10 transition-transform duration-500 group-hover:scale-125"
               style={{ color: skill.color }}
             >
               {skill.icon}
             </div>
 
-            {/* Name */}
-            <div className="absolute bottom-2 text-xs font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-500">
+            {/* Skill Name */}
+            <div className="absolute bottom-2 text-xs sm:text-sm font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-500">
               {skill.name}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
