@@ -12,23 +12,37 @@ const Navbar = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const links = (
-    <>
-      {navItems.map((link) => (
-        <li key={link.name}>
-          <a
-            href={link.href}
-            onClick={() => setIsOpen(false)}
-            className="relative group px-1 transition duration-300 text-white hover:text-red-400"
-          >
-            {link.name}
-            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-      ))}
-    </>
-  );
-
+ const links = (
+  <>
+    {navItems.map((link) => (
+      <li key={link.name} className="relative group">
+        <a
+          href={link.href}
+          onClick={() => setIsOpen(false)}
+          className="
+            px-1 py-1
+            text-white font-semibold
+            transition-colors duration-400 ease-in-out
+            group-hover:text-red-400
+          "
+        >
+          {link.name}
+        </a>
+        {/* Improved animated underline */}
+        <span
+          className="
+            absolute left-0 -bottom-1 h-0.5 w-full
+            bg-red-500
+            scale-x-0
+            origin-left
+            transition-transform duration-400 ease-in-out
+            group-hover:scale-x-100
+          "
+        ></span>
+      </li>
+    ))}
+  </>
+);
   return (
     <nav className="sticky top-0 z-50 max-w-7xl mx-auto mt-5 px-6 py-3 rounded-xl shadow-xl backdrop-blur-xl bg-[#1a263880] border-l-2 border-blue-300 border-r-2 text-white flex items-center justify-between">
       {/* Logo */}
